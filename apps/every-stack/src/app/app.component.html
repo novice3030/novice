@@ -1,2 +1,14 @@
-<h1>Welcome every-stack</h1>
-<lib-card> <h2>I'm a card</h2> </lib-card><router-outlet></router-outlet>
+<mat-toolbar color="secondary">
+  <div class="flex w-full">
+    Welcome to the store
+    <div class="ml-2 text-end w-full">
+      <button (click)="showCart()" mat-button>
+        <mat-icon> shopping_cart </mat-icon>
+        {{ cartStore.totalPrice() | currency  }}
+      </button>
+    </div>
+  </div>
+</mat-toolbar>
+<div class="p-5">
+  <router-outlet></router-outlet>
+</div>

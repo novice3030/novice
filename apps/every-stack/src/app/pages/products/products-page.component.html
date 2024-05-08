@@ -1,0 +1,8 @@
+<div class="flex gap-5 flex-wrap">
+  @for(product of productsStore.products(); track product.id) {
+  <app-product
+    [product]="product"
+    (addToCartClick)="onAddToCartClicked(product)"
+  ></app-product>
+  }
+</div>

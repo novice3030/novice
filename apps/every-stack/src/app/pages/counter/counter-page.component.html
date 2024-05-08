@@ -1,0 +1,12 @@
+<app-counter></app-counter>
+<div>
+  <button mat-button (click)="add()">
+    add to input signal
+  </button>
+  <button mat-button (click)="decrease()">decrease from input signal</button>
+</div>
+<div>
+  Input signal: 
+  <app-display-count [count]="count()"></app-display-count>
+
+</div>
