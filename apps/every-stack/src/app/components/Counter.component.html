@@ -1,0 +1,12 @@
+<button
+  mat-raised-button
+  color="primary"
+  class="mr-1"
+  (click)="increaseClicked()"
+>
+  Increase
+</button>
+<button mat-raised-button color="primary" (click)="decreasmentClicked()">
+  Decrease
+</button>
+<div class="mt-1 text-xl">Current count is {{ count() }}</div>

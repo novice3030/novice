@@ -20,7 +20,10 @@
           "apps/every-stack/src/favicon.ico",
           "apps/every-stack/src/assets"
         ],
-        "styles": ["apps/every-stack/src/styles.scss"],
+        "styles": [
+          "@angular/material/prebuilt-themes/indigo-pink.css",
+          "apps/every-stack/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {

@@ -1,0 +1,19 @@
+<mat-card class="p-1 w-64 flex items-center">
+  <mat-card-title
+    class="text-ellipsis whitespace-nowrap overflow-hidden w-full text-center"
+  >
+    {{ product().name }}
+  </mat-card-title>
+  <mat-card-content class="mt-2">
+    <img mat-card-image [src]="product().imageUrl" class="max-w-36 max-h-36" />
+  </mat-card-content>
+  <mat-card-actions class="text-lg">
+    {{ product().price | currency }}
+  </mat-card-actions>
+  <mat-card-footer>
+    <button (click)="addToCartClick.emit()" mat-raised-button color="primary">
+      Add to cart
+      <mat-icon> shopping_cart</mat-icon>
+    </button>
+  </mat-card-footer>
+</mat-card>
